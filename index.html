@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body style="background-image: url(img/bg.png)">
+    <div class="container mx-auto p-4">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger shadow-lg p-3" style="border-radius: 35px 35px 0 0">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="img/logo ittp.png" alt="" width="160" height="47" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Tentang ITTP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Prestasi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Riset & Teknologi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Pendaftaran</a>
+                    </li>
+                  </ul>
+                  <div class="searchbt text-light" id="searchbt">
+                    <form class="d-flex bg-transparent">
+                      <input class="form-control form-control-lg bg-transparent border-0 text-light" id="inpsearch" type="search" placeholder="Cari... " aria-label="Search" />
+                      <button type="submit" class="search-submit rounded-3 bg-transparent shadow-none border-0">
+                        <i class="fas fa-search"> <img src="img/search.png" alt="" width="25" height="25" /> </i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <div class="coursel">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner" style="border-radius: 0 0 35px 35px; height: 500px">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="img/gambar1.jpeg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block pb-xl-5 py-xxl-5 pe-5 ps-0" style="top: 0; padding-top: 100px">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="card bg-transparent border-0">
+                          <div class="card-body">
+                            <h1 class="card-title text-danger text-sm-start fw-bold">Institut Terbaik Implementasi Kampus Merdeka</h1>
+                            <p class="card-text text-sm-start">ITTP dinobatkan sebagai Institut Terbaik di Jawa Tengah dalam Implementasi Kampus Merdeka oleh LLDIKTI VI Wilayah Jawa Tengah</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/gambar2.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/gambar3.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/gambar4.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/gambar5.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br /><br />
+      <div class="about">
+        <div class="col-12 mx-auto" style="border-radius: 35">
+          <div class="row pt-2 pb-5" style="background-color: white; border-radius: 35px; border: 1px solid black; box-shadow: 0 0 10px 3px grey">
+            <div class="col-sm-6 col-md-6 col-lg-3 border-0" style="border-radius: 90; border: none">
+              <div class="card" style="border: none" id="cardAbout">
+                <ul style="display: flex; list-style: none; padding: 20px 15px 0">
+                  <li><img width="41" height="40" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/ico-trophy.svg" alt="" /></li>
+                  <li>
+                    <h5 class="card-title fw-bold" style="padding-left: 10px"><span>Prestasi ITTP</span></h5>
+                  </li>
+                </ul>
+                <div class="card-body">
+                  <p class="card-text" style="padding-top: 10px">ITTP mendapatkan Prestasi dalam berbagai bidang, baik dalam skala Nasional maupun Internasional.</p>
+                  <a href="#" class="btn btn-danger mx-5">Lihat Prestasi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card" style="border: none" id="cardAbout">
+                <div class="card-body">
+                  <ul style="display: flex; list-style: none; padding: 0">
+                    <li><img width="29" height="37" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/Ico-lokasi.svg" alt="" /></li>
+                    <li>
+                      <h5 class="card-title fw-bold" style="padding-left: 10px"><span>Lebih Dekat Purwokerto</span></h5>
+                    </li>
+                  </ul>
+                  <p class="card-text" style="padding-top: 13px">Temukan suasana hidup dan belajar di Purwokerto bersama dengan keindahan dan kesejukan kotanya</p>
+                  <a href="#" class="btn btn-danger mx-2">Lihat Kehidupan Kampus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card" style="border: none" id="cardAbout">
+                <div class="card-body">
+                  <ul style="display: flex; list-style: none; padding: 0">
+                    <li><img width="45" height="40" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/ico-pc.svg" alt="" /></li>
+                    <li>
+                      <h5 class="card-title fw-bold" style="padding-left: 10px"><span>Fasilitas dan Kegiatan Kampus</span></h5>
+                    </li>
+                  </ul>
+                  <p class="card-text" style="padding-top: 13px">Informasi tentang ragam kegiatan mahasiswa dan berbagai fasilitas di Kampus ITTP.</p>
+                  <a href="#" class="btn btn-danger">Lihat Fasilitas dan Kegiatan</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card" style="border: none" id="cardAbout">
+                <div class="card-body">
+                  <ul style="display: flex; list-style: none; padding: 0">
+                    <li><img width="63" height="69" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/10/Virtual-Tour-CampusITTP-1.svg" alt="" /></li>
+                    <li>
+                      <h5 class="card-title fw-bold" style="padding-left: 10px"><span>Virtual Tour Campus</span></h5>
+                    </li>
+                  </ul>
+                  <p class="card-text">Kenali lingkungan kampus dengan lebih dekat.</p>
+                  <br />
+                  <br />
+                  <a href="#" class="btn btn-danger mx-4">Lihat Virtual Campus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="about">
+        <h4 style="background-color: rgba(56, 55, 55, 0.267); padding: 10px; width: 620px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">Kenpa Harus <b>Institut Teknologi Telkom Purwokerto</b></h4>
+        <br />
+        <div class="col-12 mx-auto rounded-3">
+          <div class="row rounded-3 pt-2 pb-5" style="background: none; border: none">
+            <div class="card col-3 border-0 mx-auto" style="border-radius: 30px; background: none">
+              <ul class="list-group list-group-flush" style="border-radius: 20px; background: none; border: none">
+                <a class="list-group-item bg-transparent" style="border: none">
+                  <center><img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/icon-why1.svg" alt="" style="background-color: rgb(255, 255, 255); padding: 0 10px; border-radius: 10px" /></center>
+                </a>
+                <li class="list-group-item bg-danger text-light text-center" style="border-radius: 20px 20px 0 0"><h5 class="fw-bold" style="padding: 15px">Kampus Cepat Kerja</h5></li>
+                <li class="list-group-item border-2 border-danger text-center" style="padding: 45px">Terbukti rata-rata 83% lulusan bekerja sebelum wisuda</li>
+              </ul>
+            </div>
+            <div class="card col-3 border-0 bg-transparent mx-auto" style="border-radius: 30px">
+              <ul class="list-group list-group-flush border-0 bg-transparent" style="border-radius: 20px">
+                <a class="list-group-item bg-transparent" style="border: none">
+                  <center><img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/icon-why2.svg" alt="" style="background-color: rgb(255, 255, 255); padding: 0 10px; border-radius: 10px" /></center>
+                </a>
+                <li class="list-group-item bg-danger text-light text-center" style="border-radius: 20px 20px 0 0"><h5 class="fw-bold" style="padding: 15px">Terakreditasi Ban PT</h5></li>
+                <li class="list-group-item border-2 border-danger text-center" style="padding: 47.6px">Institut sudah terakreditasi “Baik Sekali”</li>
+              </ul>
+            </div>
+            <div class="card col-3 border-0 bg-transparent mx-auto" style="border-radius: 30px">
+              <ul class="list-group list-group-flush border-0 bg-transparent" style="border-radius: 20px">
+                <a class="list-group-item bg-transparent" style="border: none">
+                  <center><img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/icon-why3.svg" alt="" style="background-color: white; padding: 0 10px; border-radius: 10px" /></center>
+                </a>
+                <li class="list-group-item bg-danger text-light text-center" style="border-radius: 20px 20px 0 0"><h5 class="fw-bold" style="padding: 15px">Go Internasional</h5></li>
+                <li class="list-group-item border-2 border-danger text-center" style="padding: 47.5px">Memiliki 25 kerjasama internasional</li>
+              </ul>
+            </div>
+            <div class="card col-3 border-0 bg-transparent mx-auto" style="border-radius: 30px">
+              <ul class="list-group list-group-flush border-0 bg-transparent" style="border-radius: 20px">
+                <a class="list-group-item bg-transparent" style="border: none">
+                  <center><img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/icon-why4.svg" alt="" style="background-color: rgb(255, 255, 255); padding: 0 10px; border-radius: 10px" /></center>
+                </a>
+                <li class="list-group-item bg-danger text-light text-center" style="border-radius: 20px 20px 0 0"><h5 class="fw-bold" style="padding: 15px">Kampus Nasional</h5></li>
+                <li class="list-group-item border-2 border-danger text-center" style="padding: 47.6px">Mahasiswa berasal dari 31 provinsi di Indonesia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="testimoni" style="background-color: rgba(243, 0, 0, 0.185)">
+        <center>
+          <h1 style="border-bottom: 2px solid rgb(189, 36, 41)">
+            <b><span style="display: inline-block; border-bottom: 5px solid rgb(189, 36, 41); padding-bottom: 15px">Testimnoni & Opini</span></b>
+          </h1>
+        </center>
+        <br /><br /><br />
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="Testimoni-tittle">
+              <h4 style="background-color: rgba(56, 55, 55, 0.267); padding: 10px; width: 180px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">Kata <b>Alumni</b></h4>
+              <br />
+            </div>
+            <div class="card-group p-5 m-auto justify-content-around text-center">
+              <div class="card">
+                <img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/ARIE.png" class="card-img-top" alt="..." style="width: 150px; align-items: center; margin: auto;">
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Arie Budi Prasojo</h5>
+                  <h5 class="card-title fs-6">Bekerja di Indosat Ooredoo</h5>
+                  <br>
+                  <p class="card-text">Saya sangat bangga menjadi alumni Institut Teknologi Telkom Purwokerto. Pengetahuan dan pengalaman yang saya peroleh selama kuliah, telah mengantarkan saya menuju karier sebagai Service Manager di Indosat Ooredoo.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/HIDNI.png" class="card-img-top" alt="..." style="width: 150px; align-items: center; margin: auto;">
+                <div class="card-body">
+                  <h5 class="card-title fs-5 ">Hidni Qafiah</h5>
+                  <h5 class="card-title fs-6 ">Bekerja di PT. Siscom Technologies</h5>
+                  <br>
+                  <p class="card-text">Kuliah di Institut Teknologi Telkom Purwokerto memberikan banyak pengalaman menyenangkan dan juga hal yang bermanfaat bagi saya saat ini. Dari akademik hingga non-akademik, suasana kampus yang menyenangkan juga mendukung mahasiswa untuk berkembang.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/Teguh.jpg" class="card-img-top" alt="..." style="width: 150px; align-items: center; margin: auto;">
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Teguh Ikhlas M</h5>
+                  <h5 class="card-title">Bekerja di PT. PINS Indonesia</h5>
+                  <br>
+                  <p class="card-text fs-6">Saya merasa bangga pernah menempuh pendidikan di Institut Teknologi Telkom Purwokerto. Saya mendapatkan banyak pembelajaran dan ilmu mengenai teknologi.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="Opini-tittle">
+            <h4 style="background-color: rgba(56, 55, 55, 0.267); padding: 10px; width: 180px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">Pojok <b>Opini</b></h4>
+            <br />
+          </div>
+          <div class="card col-12 bg-transparent border-0" style="max-width: 1200px">
+            <div class="row g-0" style="background-color: rgb(224, 224, 224); border-radius: 30px; border: 1px solid; box-shadow: 0 0 10px 3px grey">
+              <div class="col-md-4">
+                <img style="height: 400px; padding: 20px 45px" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/08/REALIS.png?resize=140%2C180&ssl=1" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-7" style="background-color: rgb(255, 255, 255)">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold" style="background-color: rgba(255, 0, 0, 0.199); padding: 10px">Kampus Bangkitkan Desa Wisata</h4>
+                  <div class="isiii" style="display: flex; padding-top: 10px; justify-content: space-between; padding-right: 20px">
+                    <p class="card-text">
+                      Tidak terasa sudah dua tahun berlalu negara kita menghadapi pandemi virus covid-19. Korban jiwa dan kerugian materil di semua sektor pemerintahan hampir semuanya terdampak pandemi covid-19. Rasa kebingungan dan was-was
+                      akan
+                    </p>
+                    <p class="card-text">terjadinya gelombang kedua nampak terlihat di wajah para pemimpin kita, tak terkecuali Bapak Presiden Jokowi Dodo dan Menteri Pariwisata Ekonomi Kreatif Sandiaga Uno. Ya,</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="nav float-end">
+                  <ul style="list-style: none; padding: 20px 20px 0 0; justify-content: space-around">
+                    <li>
+                      <a href=""><img width="25" src="img/facebook black.png" alt="" /></a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href=""><img width="25" src="img/whatsapp.png" alt="" /></a>
+                    </li>
+                    <br />
+                    <li>
+                      <a href=""><img width="25" src="img/instagram.png" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="Berita Acara">
+        <center>
+          <h1 style="border-bottom: 2px solid rgb(189, 36, 41)">
+            <b><span style="display: inline-block; border-bottom: 5px solid rgb(189, 36, 41); padding-bottom: 15px">Berita & Acara</span></b>
+          </h1>
+        </center>
+        <br /><br />
+        <div class="col-sm-12">
+          <div class="Berita-tittle">
+            <h4 style="background-color: rgba(56, 55, 55, 0.267); padding: 10px; width: 180px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">Berita <b>ITTP</b></h4>
+            <br />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex" style="background-color: rgb(244, 244, 244); height: 450px">
+                <div class="col-6">
+                  <div class="card bg-dark text-white border-0 pt-3 bg-transparent" id="pict">
+                    <img src="https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/vMix-Capture-18-October-2021-08-43-11.png?resize=370%2C250&ssl=1" class="card-img" alt="..." />
+                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end" style="padding: 0">
+                      <div class="captiongambar">
+                        <h5 class="card-title fw-bold">ITTP Selenggarakan Training of Trainer (ToT) Pendamping Program Kewirausahaan 2021</h5>
+                        <br />
+                        <a class="card-bt" href="">Selengkapnya</a>
+                      </div>
+                      <p class="card-text" style="background-color: rgba(170, 5, 5, 0.87); padding-left: 20px; padding-top: 10px">Di Pos 5 hari yang lalu</p>
+                    </div>
+                  </div>
+                  <br />
+                  <div id="btberita">
+                    <a style="box-shadow: 0 0 2px 2px grey" href="">BERITA LAINNYA</a>
+                  </div>
+                </div>
+                <div class="col-6 ps-3 pt-3">
+                  <div class="overflow-auto" style="height: 400px">
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/IMG_9823-scaled.jpg?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content1">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Rapat Koordinasi LPPM ITTP : Targetkan Publikasi Jurnal Internasional 2021 Tercapai</p></li>
+                          <li class="date"><p>9 jam lalu</p></li>
+                          <li class="isi-berita"><p>Kamis lalu (21/10), Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) IT Telkom Purwokerto mengadakan Rapat...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/pusat-bahasa.png?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content2">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Merayakan Bulan Bahasa, Pusat Bahasa ITTP Sukses Mengadakan Webinar dan Lomba Cipta Puisi</p></li>
+                          <li class="date"><p>9 jam lalu</p></li>
+                          <li class="isi-berita"><p>Selasa (19/10), Lembaga Pusat Bahasa IT Telkom Purwokerto resmi membuka rangkaian acara dalam merayakan...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/P1170818-scaled.jpg?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content3">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Workshop IoT Dalam Rangka 5 Tahun Hexacomm ITTP</p></li>
+                          <li class="date"><p>2 hari lalu</p></li>
+                          <li class="isi-berita"><p>Sabtu, (23/10) berlangsung sebuah Workshop IoT yang bertempat di laboratorium TETD, IT Telkom Purwokerto....</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/vMix-Capture-18-October-2021-08-43-11.png?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content4">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">ITTP Selenggarakan Training of Trainer (ToT) Pendamping Program Kewirausahaan 2021</p></li>
+                          <li class="date"><p>5 hari lalu</p></li>
+                          <li class="isi-berita"><p>Kali ini ITTP baru saja menyelenggarakan sebuah acara berjudul ‘Training of Trainer (ToT) Pendamping...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/09/download-1.jpg?resize=140%2C164&ssl=1" alt="" />
+                      </div>
+                      <div class="content5">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">ITTP Lepas 36 Mahasiswa Student Mobility ke Tiga Universitas Internasional</p></li>
+                          <li class="date"><p>18 October 2021</p></li>
+                          <li class="isi-berita"><p>Tepatnya Jumat, (15/10) kemarin, secara resmi telah dilepas mahasiswa student mobility ke tiga universitas...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/DLA_Logo.png?resize=140%2C180&ssl=1&is-pending-load=1" alt="" />
+                      </div>
+                      <div class="content6">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Dua Dosen ITTP lolos Pelatihan Digital Leadership Academy dari Kemkominfo X NUS</p></li>
+                          <li class="date"><p>18 October 2021</p></li>
+                          <li class="isi-berita"><p>Dekan Fakultas Teknik Telekomunikasi dan Elektro (FTTE), Dr. Anggun Fitrian, S.T., M.T dan Wakil...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i0.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/IMG_9395-scaled.jpg?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content7">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Sosialisasi dan Workshop Aplikasi Inovasi Desa Melung</p></li>
+                          <li class="date"><p>15 October 2021</p></li>
+                          <li class="isi-berita"><p>Pengmas dalam rangka Sosialisasi dan Workshop Aplikasi Inovasi Desa Melung telah dilaksanakan oleh empat...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i0.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/1.jpg?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content8">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Dosen ITTP Selenggarakan Pengmas untuk Guru SD</p></li>
+                          <li class="date"><p>15 October 2021</p></li>
+                          <li class="isi-berita"><p>Telah terlaksana kegiatan pengabdian masyarakat oleh dua dosen ITTP, Gita Fadila Fitriana, S.Kom., M.Kom...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/09/download-1.jpg?resize=140%2C164&ssl=1" alt="" />
+                      </div>
+                      <div class="content9">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">LIMA TIM ITTP MASUK TOP 120 INNOVILLAGE 2021</p></li>
+                          <li class="date"><p>11 October 2021</p></li>
+                          <li class="isi-berita"><p>Sebanyak lima tim asal ITTP berhasil masuk kedalam TOP 120 INNOVILLAGE 2021 lewat SK...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="overflow d-flex">
+                      <div class="gambar-berita">
+                        <img width="180" height="250" src="https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/GEMASTIK-Tim-Yakut.jpg?resize=140%2C180&ssl=1" alt="" />
+                      </div>
+                      <div class="content10">
+                        <ul class="berita" style="list-style: none">
+                          <li class="judul-berita"><p class="fw-bold">Tim Yakut dari ITTP Berhasil Meraih Juara 1 di GEMASTIK XIV Kategori Pengembangan Aplikasi Permainan</p></li>
+                          <li class="date"><p>11 October 2021</p></li>
+                          <li class="isi-berita"><p>Kamis lalu (7/10), merupakan hari yang menggembirakan sekaligus membanggakan untuk IT Telkom Purwokerto. Pasalnya,...</p></li>
+                          <br />
+                          <br />
+                          <li class="link-berita" href="">Selengkapnya</li>
+                        </ul>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end scrol -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end berita ittp -->
+      <br /><br /><br />
+    </div>
+    <div class="content2" style="padding: 0; margin: 0; background-image: url(https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/bg-merah.jpg);">
+      <div class="container col-12">
+        <div class="Acara-tittle">
+          <h4 style="background-color: rgb(235, 235, 235); padding: 10px; width: 180px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">Acara <b>ITTP</b></h4>
+          <br />
+        </div>
+        <!-- Border -->
+        <div class="overflow-auto bg-light" style=" border-radius: 25px; height: 600px;">
+          <div class="overflow d-flex p-5">
+            <div class="row">
+              <div class="col-sm-6  pb-4">
+                <!-- CARD content awal -->
+                <div class="card " style="background-color: rgb(224,224,224); border-radius: 25px;">
+                  <div class="card-body">
+                    <div class="info d-flex" >
+                      <img width="100" height="100"  src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/vaksin.jpg?fit=370%2C250&ssl=1&is-pending-load=1" alt="">
+                    <div class="isi ps-3">
+                      <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Pendaftaran Program Vaksinasi Covid-19 Kawasan Pendidikan Telkom Purwokerto Dosis 2 (SINOVAC)</h5>
+                      <p class="card-text">  <span> <img src="../node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt=""> </span>  Kawasan Pendidikan Telkom Purwokerto</p>
+                    </div>
+                    </div>
+                   
+                  </div>
+                  <div class="tgl d-flex p-2" style="background-color: rgb(185, 184, 184);  border-radius: 0 0 25px 25px;">
+                    <div class="col-6 pt-3 fw-bold" style="border-right: 1px solid; justify-content: end;">
+                   <center> <h4>SATURDAY</h4></center>
+                    </div>
+                  <div class="col-6 ps-3 d-flex">
+                    <h1 class="fw-bold" style="font-size: 50px;">30</h1 >
+                    <ul style="list-style:none; padding: 8px 0 0 10px; ">
+                      <li>OCTOBER</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+                <!-- CARD content akhir -->
+              </div>
+              <div class="col-sm-6  pb-4">
+                <!-- CARD content awal -->
+                <div class="card " style="background-color: rgb(224,224,224); border-radius: 25px;">
+                  <div class="card-body">
+                    <div class="info d-flex" >
+                      <img width="100" height="100"  src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/osc.jpg?fit=370%2C250&ssl=1&is-pending-load=1" alt="">
+                    <div class="isi ps-3">
+                      <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Online Scholarship Competition (OSC)</h5>
+                      <p class="card-text">  <span> <img src="../node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt=""> </span>  Online</p>
+                    </div>
+                    </div>
+                   
+                  </div>
+                  <div class="tgl d-flex p-2" style="background-color: rgb(185, 184, 184);  border-radius: 0 0 25px 25px;">
+                    <div class="col-6 pt-3 fw-bold" style="border-right: 1px solid; justify-content: end;">
+                   <center> <h4>TUESDAY</h4></center>
+                    </div>
+                  <div class="col-6 ps-3 d-flex">
+                    <h1 class="fw-bold" style="font-size: 50px;">2</h1 >
+                    <ul style="list-style:none; padding: 8px 0 0 10px; ">
+                      <li>NOVEMBER</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+                <!-- CARD content akhir -->
+              </div>
+              <div class="col-sm-6 pb-4">
+                <!-- CARD content awal -->
+                <div class="card " style="background-color: rgb(224,224,224); border-radius: 25px;">
+                  <div class="card-body">
+                    <div class="info d-flex" >
+                      <img width="100" height="100"  src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/wisuda.jpg?fit=370%2C250&ssl=1&is-pending-load=1" alt="">
+                    <div class="isi ps-3">
+                      <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Pendaftaran Wisuda ITTP 2021</h5>
+                      <p class="card-text">  <span> <img src="../node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt=""> </span>  Institut Teknologi Telkom Purwokerto (Online)</p>
+                    </div>
+                    </div>
+                   
+                  </div>
+                  <div class="tgl d-flex p-2" style="background-color: rgb(185, 184, 184);  border-radius: 0 0 25px 25px;">
+                    <div class="col-6 pt-3 fw-bold" style="border-right: 1px solid; justify-content: end;">
+                   <center> <h4>MONDAY</h4></center>
+                    </div>
+                  <div class="col-6 ps-3 d-flex">
+                    <h1 class="fw-bold" style="font-size: 50px;">15</h1 >
+                    <ul style="list-style:none; padding: 8px 0 0 10px; ">
+                      <li>NOVEMBER</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+                <!-- CARD content akhir -->
+              </div>
+              <div class="col-sm-6  pb-4">
+                <!-- CARD content awal -->
+                <div class="card " style="background-color: rgb(224,224,224); border-radius: 25px;">
+                  <div class="card-body">
+                    <div class="info d-flex" >
+                      <img width="100" height="100"  src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/invest.jpg?fit=370%2C250&ssl=1&is-pending-load=1" alt="">
+                    <div class="isi ps-3">
+                      <h5 class="card-title" style="font-size: 18px; font-weight: bold;">INVFEST 6.0 (Innovation of Technology for Answering Pandemic)</h5>
+                      <p class="card-text">  <span> <img src="../node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt=""> </span>  Institut Teknologi Telkom Purwokerto</p>
+                    </div>
+                    </div>
+                   
+                  </div>
+                  <div class="tgl d-flex p-2" style="background-color: rgb(185, 184, 184);  border-radius: 0 0 25px 25px;">
+                    <div class="col-6 pt-3 fw-bold" style="border-right: 1px solid; justify-content: end;">
+                   <center> <h4>THURSDAY</h4></center>
+                    </div>
+                  <div class="col-6 ps-3 d-flex">
+                    <h1 class="fw-bold" style="font-size: 50px;">18</h1 >
+                    <ul style="list-style:none; padding: 8px 0 0 10px; ">
+                      <li>NOVEMBER</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+                <!-- CARD content akhir -->
+              </div>
+              <div class="col-sm-6  pb-4">
+                <!-- CARD content awal -->
+                <div class="card " style="background-color: rgb(224,224,224); border-radius: 25px;">
+                  <div class="card-body">
+                    <div class="info d-flex" >
+                      <img width="100" height="100"  src="https://i0.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/baksos-1.jpg?fit=370%2C250&ssl=1&is-pending-load=1" alt="">
+                    <div class="isi ps-3">
+                      <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Bakti Sosial untuk Kaum Dhuafa & Yatim Piatu Desa Melung</h5>
+                      <p class="card-text">  <span> <img src="../node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt=""> </span>  Institut Teknologi Telkom Purwokerto</p>
+                    </div>
+                    </div>
+                   
+                  </div>
+                  <div class="tgl d-flex p-2" style="background-color: rgb(185, 184, 184);  border-radius: 0 0 25px 25px;">
+                    <div class="col-6 pt-3 fw-bold" style="border-right: 1px solid; justify-content: end;">
+                   <center> <h4>THURSDAY</h4></center>
+                    </div>
+                  <div class="col-6 ps-3 d-flex">
+                    <h1 class="fw-bold" style="font-size: 50px;">25</h1 >
+                    <ul style="list-style:none; padding: 8px 0 0 10px; ">
+                      <li>NOVEMBER</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+                <!-- CARD content akhir -->
+              </div>
+              
+        </div>
+      </div>
+    <br>
+    <br>
+    </div>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="TV">
+            <div class="Acara-tittle">
+              <h4 style="background-color: rgb(235, 235, 235); padding: 10px; width: 180px; border-radius: 0 20px 20px 0; border-left: 8px solid crimson">TV <b>ITTP</b></h4>
+              <br />
+            </div>
+            <div class="vid col-12 d-flex p-3 " style="justify-content: space-around;">
+              <div class="card col-3">
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/vFm7uxPEM7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Sosialisasi dan Workshop Aplikasi Inovasi Desa Melung</h5>
+                </div>
+              </div><div class="card  col-3">
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/OGg9dPTGt_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Telkom Gelar Vaksinasi Masal Untuk Civitas Kawasan Pendidikan Telkom dan Warga Purwokerto</h5>
+                </div>
+              </div><div class="card  col-3">
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/bgxNPqUqF0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">IITP Lepas Mahasiswa KKN Tematik untuk 3 mitra Desa</h5>
+                </div>
+              </div><div class="card  col-3">
+                <iframe width="265" height="300" src="https://www.youtube.com/embed/9DZeE7dQdxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">ITTP Menjadi Institut Terbaik Dalam Implementasi MBKM di Jawa Tengah</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <br>
+    <div class="content3" style="  padding: 0; margin: 0;  background-color: white; background-image: url(img/bg.png)">
+      <div class="col-12">
+        <div class="kERJA SAMA">
+          <br><br><br>
+          <center>
+            <h3 style="border-bottom: 2px solid rgb(189, 36, 41)">
+              <b><span style="display: inline-block; border-bottom: 5px solid rgb(189, 36, 41); padding-bottom: 15px">KERJASAMA INSTITUSI DAN KOPERASI </span></b>
+            </h3>
+          </center>
+      </div>
+      <div class="col-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-8 mx-auto" data-bs-ride="carousel">
+          <div class="carousel-inner col-2">
+            <div class="carousel-item active col-2 d-flex">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/13.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/15.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/16.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/17.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/04/18.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/06/1594108255409_compress_logo-telkom-indonesia.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/06/telkomsel.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Logo-Telkomedika.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/06/logo-BNI-46-1-1.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/07/Webp.net-resizeimage.png" class="d-block " alt="...">
+              <img width="120" height="120" src="https://ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Logo-Kolej-Universiti-Islam-Selangor-KUIS-New.png" class="d-block " alt="...">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <br>
+      <br>
+    </div>
+    <footer style="background-color: rgb(189,36,41);">
+      <div class="container col-12 mx-auto"  style="color: white;">
+        <div class="row align-items-center p-4">
+          <div class="col-6 ">
+            <h1 class="fw-bold">INGIN LEBIH DEKAT DENGAN ITTP?</h1>
+            <p class="fs-5">Yuk chat aja dan ikuti akun social media ittp</p>
+          </div>
+          <div class="col-3">
+            <ul class="sosmed" style="list-style: none;">
+              <div class="icon d-flex">
+              <li class="pe-2"><img  width="32" src="img/facebook.png" alt=""></li>
+              <li ><h4 class="fw-bold">Facebook</h4></li>
+            </div>
+              <li>@ittelkompurwokerto</li>
+            </ul>
+            <ul class="sosmed" style="list-style: none;">
+              <div class="icon d-flex">
+              <li class="pe-2"><img  width="32" src="img/white instagram.png" alt=""></li>
+              <li ><h4 class="fw-bold">Instagram</h4></li>
+            </div>
+              <li>@ittelkompurwokerto</li>
+            </ul>
+            
+          </div>
+          <div class="col-3">
+            <ul class="sosmed" style="list-style: none;">
+              <div class="icon d-flex">
+              <li class="pe-2"><img  width="32" src="img/white whatsapp.png" alt=""></li>
+              <li ><h4 class="fw-bold">Whatsapp</h4></li>
+            </div>
+              <li>081 126 161 16</li>
+            </ul>
+            <ul class="sosmed" style="list-style: none;">
+              <div class="icon d-flex">
+              <li class="pe-2"><img  width="32" src="img/white Youtube.png" alt=""></li>
+              <li ><h4 class="fw-bold">Youtube</h4></li>
+            </div>
+              <li>Official IT Telkom Purwokerto</li>
+            </ul>
+            
+          </div>
+          
+        </div>
+        <br>
+        <br>
+      </div>
+    </footer>
+    <footer  class="footer2" style="background-color: rgb(219,41,47); color: white;">
+      <div class="row p-lg-5">
+        <div class="col-3">
+          <img src="https://i2.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/04/logo-putih.png?fit=160%2C47&ssl=1&is-pending-load=1" alt="">
+          <p>Bridging Technology for Humanity</p>
+          <p>Jl. D.I Panjaitan No. 128 Purwokerto 53147, Jawa Tengah - Indonesia</p>
+          <table>
+            <tr>
+              <td>Telp</td>
+              <td class="spasi">: </td>
+              <td>0281-641629</td>
+            </tr>
+            <tr>
+              <td>WA</td>
+              <td class="spasi">: </td>
+              <td>081 126 161 16</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="spasi">: </td>
+              <td>info@ittelkom-pwt.ac.id</td>
+            </tr>
+            <tr>
+              <td>Negara</td>
+              <td class="spasi">: </td>
+              <td>Indonesia</td>
+            </tr>
+          </table>
+          <br>
+          <img src="https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Logo_YPT.png?fit=160%2C90&ssl=1&is-pending-load=1" alt="">
+          <p>Yayasan Pendidikan Telkom</p>
+          <p>Cisanggarung No. 2 RT.002/RW. 007 Citarum Bandung Wetan, Kota Bandung, Bandung, Jawa Barat, 40115, ID</p>
+          <table>
+            <tr>
+              <td>Telp</td>
+              <td class="spasi">: </td>
+              <td>+62 812-2831-9222</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="spasi">: </td>
+              <td>info@ittelkom-pwt.ac.id</td>
+            </tr>
+            <tr>
+              <td>Situs Web</td>
+              <td class="spasi">: </td>
+              <td>http://Ittelkom-pwt.ac.id/</td>
+            </tr>
+            
+            <tr>
+              <td>Negara</td>
+              <td class="spasi">: </td>
+              <td>Indonesia</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-6">
+          <div class="mn col-12  d-flex">
+          <ul class="menu col-6" style="list-style: none; text-decoration: none;">
+            <h5 class="fw-bold">Menu</h5>
+            <div class="menulist">
+              <li> <a class="footlist" href="">Prestasi</a></li>
+            <li> <a class="footlist" href="">Pendidikan</a></li>
+            <li> <a class="footlist" href="">Pengumuman</a></li>
+            <li> <a  class="footlist" href="">Riset & Teknologi</a></li>
+            <li> <a  class="footlist" href="">Tentang ITTP</a></li>
+            </div>
+            
+          </ul>
+          <ul class="Link col-6" style="list-style: none; text-decoration: none;">
+            <h5 class="fw-bold">Link Terkait</h5>
+            <div class="menulist">
+            <li> <a  class="footlist" href="">Karir</a></li>
+            <li> <a  class="footlist" href="">Kantor Urusan Internasional</a></li>
+            <li> <a  class="footlist" href="">Yayasan Pendidikan Telkom</a></li>
+            </div>
+            
+          </ul>
+          </div> 
+          <br>       
+          <ul>
+            <h5 class="fw-bold">Tentang Kami</h5>
+            <p>Institut Teknologi Telkom Purwokerto adalah perguruan tinggi yang dikelola oleh Yayasan Pendidikan Telkom dan merupakan satu-satunya Institut di Jawa Tengah.</p>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h5 class="fw-bold">Peta Lokasi</h5>
+          <iframe 
+          loading="lazy" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2671440800286!2d109.24891323787914!3d-7.435663965627975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ea49d9f9885%3A0x62be0b6159700ec9!2sTelkom%20Institute%20of%20Technology%20Purwokerto!5e0!3m2!1sen!2sid!4v1598001534300!5m2!1sen!2sid" 
+          width="200" 
+          height="220" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          aria-hidden="false" 
+          tabindex="0" 
+          data-rocket-lazyload="fitvidscompatible" 
+          class="lazyloaded" 
+          data-ll-status="loaded">
+        </iframe>
+        </div>
+        <br>
+        
+      </div>
+    </footer>
+    <footer style="background-color: rgb(125,11,21); color: white;">
+      <div class="col-10 mx-auto p-2">
+        Copyright © 2021 Institut Teknologi Telkom Purwokerto
+      </div>
+      
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

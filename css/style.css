@@ -1,0 +1,106 @@
+#cardAbout:hover {
+  background-color: brown;
+  color: white;
+  transform: translate(0, -50px);
+  transition-duration: 0.7s;
+  border-radius: 30px;
+}
+.nav-item a:hover {
+  background-color: rgba(0, 0, 0, 0.212);
+  border-radius: 60px;
+  border: 1px solid white;
+}
+
+#searchbt {
+  background-color: rgba(255, 255, 255, 0.151);
+  color: white;
+  border-radius: 15px;
+  width: 250px;
+}
+
+#btberita a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 202px 10px 202px;
+}
+#btberita a:hover {
+  color: white;
+  background-color: gold;
+}
+.gambar-berita img {
+  border-radius: 30px;
+}
+.berita {
+  font-size: 13.5px;
+}
+.link-berita {
+  padding-top: 5px;
+  padding-bottom: 8px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 40px;
+  background-color: brown;
+  color: white;
+}
+
+.link-berita:hover {
+  background-color: gold;
+}
+.caption-1 figcaption {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+.captiongambar {
+  background-color: rgba(165, 7, 7, 0.582);
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-bt {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+}
+.card-bt:hover {
+  background-color: brown;
+  color: white;
+}
+
+.spasi {
+  padding-left: 50px;
+}
+.footlist {
+  color: white;
+  text-decoration: none;
+}
+
+.footer2 {
+  padding: 10px;
+  padding-left: 95px;
+  font-size: 13px;
+}
+.menulist {
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+.menulist li {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.sosmed:hover {
+  color: gold;
+}
+
+.footlist:hover {
+  color: gold;
+}
